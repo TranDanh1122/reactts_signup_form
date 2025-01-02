@@ -2,7 +2,7 @@ import React from "react"
 
 declare global {
     interface FormAction {
-        key: "error" | "inputing" | "submited",
+        key: "submited" | "inputing",
         input?: Input
     }
     interface Form {
@@ -10,7 +10,9 @@ declare global {
         formData: FormData
     }
     interface Input {
+        id: string | number,
         name: string,
+        type: string,
         placeholder: string,
         value: string,
         status: 'pristine' | 'dirty' | 'touched' | 'valid' | 'invalid',

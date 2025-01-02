@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -564,6 +568,30 @@ video {
 
 .top-full {
   top: 100%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
+.top-\[calc\(25\%-12px\)\] {
+  top: calc(25% - 12px);
+}
+
+.top-\[calc\(25\%-6px\)\] {
+  top: calc(25% - 6px);
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .mb-3 {
@@ -582,8 +610,16 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-1\/2 {
@@ -592,6 +628,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .flex-col {
@@ -630,6 +670,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -663,14 +707,24 @@ video {
   background-color: hsl(248 32% 49% / var(--tw-bg-opacity, 1));
 }
 
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: hsl(154 59% 51% / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-green {
+.bg-red {
   --tw-bg-opacity: 1;
-  background-color: hsl(154 59% 51% / var(--tw-bg-opacity, 1));
+  background-color: hsl(0 100% 74% / var(--tw-bg-opacity, 1));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-10 {
@@ -723,12 +777,12 @@ video {
   line-height: 1.5rem;
 }
 
-.leading-\[55px\] {
-  line-height: 55px;
-}
-
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-\[55px\] {
+  line-height: 55px;
 }
 
 .tracking-\[-0\.52px\] {
@@ -743,6 +797,11 @@ video {
   letter-spacing: 0.27px;
 }
 
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(246 25% 77% / var(--tw-text-opacity, 1));
+}
+
 .text-red {
   --tw-text-opacity: 1;
   color: hsl(0 100% 74% / var(--tw-text-opacity, 1));
@@ -751,11 +810,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-grayishBlue {
-  --tw-text-opacity: 1;
-  color: hsl(246 25% 77% / var(--tw-text-opacity, 1));
 }
 
 .shadow-md {
